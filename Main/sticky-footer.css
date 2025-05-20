@@ -1,5 +1,6 @@
 .footer {
   flex-shrink: 0;
+
 }
 
 .footer .img-fluid {
@@ -11,6 +12,7 @@
   font-size: 0.7rem;
   padding: 0rem;
   margin: 0rem;
+
 }
 
 hr {
