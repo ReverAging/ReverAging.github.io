@@ -22,9 +22,6 @@ body {
       z-index: 1000;
     }
 
-.navbar-toggler {
-      background-color: #ffffff;
-    }
 
 @media (max-width: 767.98px) {
   .navbar-nav {
