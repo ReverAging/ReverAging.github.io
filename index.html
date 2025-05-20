@@ -15,58 +15,43 @@
     <link rel="stylesheet" href="Main/sticky-footer.css">
     <link rel="stylesheet" href="Main/totop.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-      .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-      }
-      @media (max-width: 767.98px) {
-        .navbar-nav {
-          flex-direction: column;
-          align-items: center;
-        }
-        .navbar-toggler {
-          margin-left: auto;
-        }
-      }
-      .location-image {
-        max-width: 100%;
-        height: auto;
-      }
-      .section-title {
-        font-family: 'Merriweather', serif;
-        font-size: 2.5rem;
-        font-weight: bold;
-      }
-    </style>
+    
 </head>
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-            <img src="logo.png" alt="Rever logo" class="logo-img">
-        </a>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="logo.png" alt="Rever logo" class="logo-img">
+    </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#why-it-matters">Why Aging?</a></li>
-                <li class="nav-item"><a class="nav-link" href="#technology">Our Approach</a></li>
-                <li class="nav-item"><a class="nav-link" href="#expertise">Our Research</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team">The Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
-            </ul>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active " href="/">Home<span class="sr-only">(current)</span> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#why-it-matters">Why Aging?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#technology">Our Approach</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#expertise">Our Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">The Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#location">Location</a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
 
 <main role="main" class="content pt-5 mt-5">
