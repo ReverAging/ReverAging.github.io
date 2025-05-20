@@ -7,10 +7,30 @@ body {
   width: auto;
 }
 
-.logo-img:hover {
-    content: url("logo2.png");
-}
-
 .navbar-brand, .navbar-nav .nav-link {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.navbar {
+      background-color: #343a40;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+.navbar-toggler {
+      background-color: #ffffff;
+    }
+
+@media (max-width: 767.98px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-toggler {
+    margin-left: auto;
+  }
 }
