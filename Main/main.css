@@ -1,4 +1,3 @@
-
 a.anchor {
     display: block;
     position: relative;
@@ -6,8 +5,7 @@ a.anchor {
     visibility: hidden;
 }
 
-
-#module a.collapsed:after  {
+#module a.collapsed:after {
     content: '+ Show More';
 }
 
@@ -15,89 +13,194 @@ a.anchor {
     content: '- Show Less';
 }
 
-.twitter-timeline-over{
-	overflow-y: scroll!important;
+.twitter-timeline-over {
+    overflow-y: scroll !important;
 }
 
-
-  .reduce_margin{
-  	margin-left:-15px;
-  	margin-bottom: 0px;
-  }
-
-
-.bg-custom{background-color: #ececec}
-
-.bottom-page{
-	display:block;
-	max-height:250px;
-  width:100%;
+.reduce_margin {
+    margin-left: -15px;
+    margin-bottom: 0px;
 }
 
-
-.height450{
-	display:block;
-	max-height:450px;
+.bg-custom {
+    background-color: #ececec;
 }
 
-.h-90{
-
-		height:90%!important;
-
+.bottom-page {
+    display: block;
+    max-height: 250px;
+    width: 100%;
 }
 
-.h-70{
-
-    height:70%!important;
-
+.height450 {
+    display: block;
+    max-height: 450px;
 }
 
-.h-40{
-
-height:40%!important;
-
+.h-90 {
+    height: 90% !important;
 }
 
-.h-10{
-
-    height:10%!important;
-
+.h-70 {
+    height: 70% !important;
 }
 
-.h100{height:120px; max-width:100%;}
-.max-h{ height: 125px; }
-.mh100{max-height:120px; max-width:100%;}
-.height200{height:200px;}
-.maxheight200{max-height:200px;}
-
-
-.maxheight100{max-height:100px;}
-
-.height300{height:300px;}
-.height100{height:100px;}
-.h300{height:300px;}
-.h25{height:25px;}
-.maxheight300{max-height:300px; max-width:100%;}
-.maxheight400{max-height:400px;}
-.maxheight500{max-height:500px; max-width:100%;}
-
-
-.hrr{
-	font-weight: bold ;
+.h-40 {
+    height: 40% !important;
 }
 
-a{color: #429933;}
-a:hover {color: #429933;}
-a.blacklink{color: #397d10;}
-
-
-.hl{
-  display: block;
-  border-top: solid 1px #429933;
-  width: 100%;
-  height:1px;
-  z-index: -1;
+.h-10 {
+    height: 10% !important;
 }
 
-h5{font-weight: bold !important;}
-h4{font-weight: bold !important;}
+.h100 {
+    height: 120px;
+    max-width: 100%;
+}
+
+.max-h {
+    height: 125px;
+}
+
+.mh100 {
+    max-height: 120px;
+    max-width: 100%;
+}
+
+.height200 {
+    height: 200px;
+}
+
+.maxheight200 {
+    max-height: 200px;
+}
+
+.maxheight100 {
+    max-height: 100px;
+}
+
+.height300 {
+    height: 300px;
+}
+
+.height100 {
+    height: 100px;
+}
+
+.h300 {
+    height: 300px;
+}
+
+.h25 {
+    height: 25px;
+}
+
+.maxheight300 {
+    max-height: 300px;
+    max-width: 100%;
+}
+
+.maxheight400 {
+    max-height: 400px;
+}
+
+.maxheight500 {
+    max-height: 500px;
+    max-width: 100%;
+}
+
+/* Typography and Text Styles */
+.hrr {
+    font-weight: bold;
+}
+
+a {
+    color: #429933;
+}
+
+a:hover {
+    color: #429933;
+}
+
+a.blacklink {
+    color: #397d10;
+}
+
+.hl {
+    display: block;
+    border-top: solid 1px #429933;
+    width: 100%;
+    height: 1px;
+    z-index: -1;
+}
+
+h5, h4 {
+    font-weight: bold !important;
+}
+
+/* Layout and Component Styles */
+body {
+    font-family: 'Merriweather', serif;
+}
+
+.card-text, .card-title, .card-subtitle, .nav-link, .footer-text {
+    font-family: 'Merriweather', serif;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.scroll-offset {
+    scroll-margin-top: 80px; /* Adjust to match your navbar height */
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.team-section .card-body,
+.advisors-section .card-body {
+    text-align: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    max-width: 150px;
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-text {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/* Ensure text in specific sections is centered */
+#why-it-matters p,
+#technology p {
+    text-align: justify;
+}
+
+.linkedin-logo {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+    margin-top: 10px; /* Add some space above the logo */
+}

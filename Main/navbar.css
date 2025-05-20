@@ -17,3 +17,8 @@ nav>a>img.img-fluid{
   .reduce_padding{
     padding: 0px;
   }
+
+  .logo-img {
+  height: 30px;
+  width: auto;
+}
