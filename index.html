@@ -22,7 +22,9 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
-      <img src="logo.png" alt="Rever logo" class="logo-img">
+      <img src="logo.png" alt="Rever logo" class="logo-img" 
+           onmouseover="this.src='Images/logo_white.png'" 
+           onmouseout="this.src='logo.png'">
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,6 +67,9 @@
         <p class="lead">
             The world population is aging rapidly, creating a growing public health and economic burden. Aging is the common denominator behind most chronic diseases — from cancer to Alzheimer’s.
         </p>
+        <div class="text-center my-4">
+            <img src="Images/driver.png" alt="Aging driver illustration" class="img-fluid" style="max-width: 80%;">
+        </div>
         <p>
             Without addressing the root cause — biological aging — treating one disease only delays the onset of another. By extending healthspan, we can reduce disease burden, improve quality of life, and boost economic value across society.
         </p>
@@ -87,34 +92,52 @@
         <h2 class="text-center mb-4 section-title">Our Expertise in Reprogramming</h2>
         <div class="row text-center">
             <div class="col-sm-6 col-lg-3 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="Images/paper1.jpg" class="card-img-top" alt="Paper 1">
+                <div class="card h-100 shadow-sm paper-card" data-bs-toggle="modal" data-bs-target="#paperModal" 
+                     data-paper-title="Schoenfeldt et al."
+                     data-paper-abstract="The dedifferentiation of somatic cells into a pluripotent state by cellular reprogramming coincides with a reversal of age-associated molecular hallmarks. Although transcription factor induced cellular reprogramming has been shown to ameliorate these aging phenotypes in human cells and extend health and lifespan in mice, translational applications of this approach are still limited. More recently, chemical reprogramming via small molecule cocktails have demonstrated a similar ability to induce pluripotency in vitro, however, its potential impact on aging is unknown. Here, we demonstrated that partial chemical reprogramming is able to improve key drivers of aging including genomic instability and epigenetic alterations in aged human cells. Moreover, we identified an optimized combination of two reprogramming molecules sufficient to induce the amelioration of additional aging phenotypes including cellular senescence and oxidative stress. Importantly, in vivo application of this two-chemical combination significantly extended C. elegans lifespan. Together, these data demonstrate that improvement of key drivers of aging and lifespan extension is possible via chemical induced partial reprogramming, opening a path towards future translational applications."
+                     data-paper-doi="doi.org/10.1101/2022.08.29.505222 "
+                     data-paper-note="(In press in EMBO)"
+                     data-paper-published="August 31, 2022">
+                    <img src="Images/schoen.jpg" class="card-img-top" alt="Schoenfeldt et al. paper">
                     <div class="card-body">
-                        <h6 class="card-title">Paper Title 1</h6>
+                        <h6 class="card-title">Schoenfeldt et al.</h6>
+                        <small class="text-muted">(In press in EMBO)</small>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="Images/paper2.jpg" class="card-img-top" alt="Paper 2">
+                <div class="card h-100 shadow-sm paper-card" data-bs-toggle="modal" data-bs-target="#paperModal"
+                     data-paper-title="Parras et al."
+                     data-paper-abstract="The induction of cellular reprogramming via expression of the transcription factors Oct4, Sox2, Klf4 and c‐Myc (OSKM) can drive dedifferentiation of somatic cells and ameliorate age-associated phenotypes in multiple tissues and organs. However, the benefits of long-term in vivo reprogramming are limited by detrimental side‐effects. Here, using complementary genetic approaches, we demonstrated that continuous induction of the reprogramming factors in vivo leads to hepatic and intestinal dysfunction resulting in decreased body weight and contributing to premature death (within 1 week). By generating a transgenic reprogrammable mouse strain, avoiding OSKM expression in both liver and intestine, we reduced the early lethality and adverse effects associated with in vivo reprogramming and induced a decrease in organismal biological age. This reprogramming mouse strain, which allows longer-term continuous induction of OSKM with attenuated toxicity, can help better understand rejuvenation, regeneration and toxicity during in vivo reprogramming."
+                     data-paper-doi="https://www.nature.com/articles/s43587-023-00528-5"
+                     data-paper-published="November 27, 2023">
+                    <img src="Images/parrasetal.png" class="card-img-top" alt="Parras et al. paper">
                     <div class="card-body">
-                        <h6 class="card-title">Paper Title 2</h6>
+                        <h6 class="card-title">Parras et al.</h6>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="Images/paper3.jpg" class="card-img-top" alt="Paper 3">
+                <div class="card h-100 shadow-sm paper-card" data-bs-toggle="modal" data-bs-target="#paperModal"
+                     data-paper-title="Phelps et al."
+                     data-paper-abstract="The nematode C. elegans has long served as a gold-standard model organism in aging research, particularly since the discovery of long-lived mutants in conserved aging pathways including daf-2 (IGF1) and age-1 (PI3K). Its short lifespan and small size make it highly suitable for high-throughput experiments. While numerous molecules have been tested for their effects on C. elegans lifespan, consensus is still lacking regarding the most effective and reproducible compounds. Confounding effects, especially those related to drug-bacteria interactions, remain a contentious issue in the literature. In this study, we evaluated 16 of the most frequently reported lifespan-extending molecules in C. elegans, examining their effects on lifespan with two different diets (live and UV-killed OP50). In addition, we assessed the compounds' impact on bacterial growth, their effects on various nematode strains, and the impact of the starting age of treatment. Our findings first confirmed robust lifespan extension by many, but not all, of the 16 tested compounds from the literature, and revealed that some of them could be combined to obtain additive effects. Additionally, we showed that some of these compounds also extend lifespan in the fly D. melanogaster, demonstrating a conserved effect across species. Finally, by expanding our screen to a broader pool of molecules, we identified novel lifespan-extending compounds in C. elegans."
+                     data-paper-doi="doi.org/10.1111/acel.14424"
+                     data-paper-published="January 24, 2025">
+                    <img src="Images/phelpsetal.png" class="card-img-top" alt="Phelps et al. paper">
                     <div class="card-body">
-                        <h6 class="card-title">Paper Title 3</h6>
+                        <h6 class="card-title">Phelps et al.</h6>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="Images/paper4.jpg" class="card-img-top" alt="Paper 4">
+                <div class="card h-100 shadow-sm paper-card" data-bs-toggle="modal" data-bs-target="#paperModal"
+                     data-paper-title="Pico et al."
+                     data-paper-abstract="In vivo reprogramming through the forced expression of Oct4, Sox2, Klf4, and c-Myc (OSKM) has demonstrated great potential for reversing age-associated phenotypes, as the combination of these transcription factors actively promote cell regeneration and rejuvenation in various tissues and organs. However, continuous in vivo OSKM expression raised safety concerns due to loss of cell identity, decrease in body weight, and premature death. Although cyclic short-term or targeted expression of the reprogramming factors can mitigate some of these detrimental effects in mice, systemic rejuvenation of wild type mice has remained elusive potentially due to these current technical limitations. To improve the fundamental understanding of in vivo reprogramming, we conducted a comparative analysis across multiple reprogrammable mouse strains, tissues, and expression methods, presenting a comprehensive atlas of formerly established strains. In addition, we developed novel reprogrammable mouse strains by avoiding OSKM expression in specific organs, in dividing cells, or implementing chimeric expression approaches within specific cells, thereby offering safer strategies to induce in vivo reprogramming and fully harness its potential. We hope that these new tools will become valuable resources for future research in this very exciting field of research with potential implications to human health."
+                     data-paper-doi="doi.org/10.1101/2024.03.08.584074"
+                     data-paper-published="March 8, 2024">
+                    <img src="Images/picoetal.jpg" class="card-img-top" alt="Pico et al. paper">
                     <div class="card-body">
-                        <h6 class="card-title">Paper Title 4</h6>
+                        <h6 class="card-title">Pico et al.</h6>
                     </div>
                 </div>
             </div>
@@ -271,7 +294,7 @@
         <h2 class="text-center mb-4 section-title">Location</h2>
         <p class="text-center lead">Lausanne, Switzerland</p>
         <div class="text-center">
-            <img src="Images/Lausanne.png" alt="Lausanne" class="img-fluid rounded shadow-sm" style="max-width: 90%;">
+            <img src="Images/Lausanne.png" alt="Lausanne" class="img-fluid rounded shadow-sm" style="max-width: 60%;">
         </div>
     </div>
 </main>
@@ -290,11 +313,69 @@
     </div>
 </footer>
 
+<div class="modal fade" id="paperModal" tabindex="-1" aria-labelledby="paperModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="paperModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong class="me-2">Abstract:</strong><span id="modalAbstract"></span></p>
+        <p id="modalNote" class="text-muted fst-italic"></p>
+        <p><strong class="me-2">Published:</strong><span id="modalPublished"></span></p>
+        <p><strong class="me-2">Reference:</strong><a id="modalDoi" href="#" target="_blank"></a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="Main/jquery-3.js"></script>
 <script src="Main/totop.js"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>
+    // JavaScript to handle opening the modal and populating content
+    var paperModal = document.getElementById('paperModal');
+    paperModal.addEventListener('show.bs.modal', function (event) {
+        // Button that triggered the modal
+        var button = event.relatedTarget; 
+        
+        // Extract info from data-bs-* attributes
+        var title = button.getAttribute('data-paper-title');
+        var abstract = button.getAttribute('data-paper-abstract');
+        var doi = button.getAttribute('data-paper-doi');
+        var note = button.getAttribute('data-paper-note'); 
+        var published = button.getAttribute('data-paper-published'); 
 
+        // Update the modal's content.
+        var modalTitle = paperModal.querySelector('.modal-title');
+        var modalAbstract = paperModal.querySelector('#modalAbstract');
+        var modalDoi = paperModal.querySelector('#modalDoi');
+        var modalNote = paperModal.querySelector('#modalNote'); 
+        var modalPublished = paperModal.querySelector('#modalPublished'); 
+
+        modalTitle.textContent = title;
+        modalAbstract.textContent = abstract;
+        modalDoi.textContent = doi; // Display the full URL or DOI
+        modalDoi.href = doi; // Set the href directly to the full URL
+
+        // Update the note and show/hide it based on existence
+        if (note) {
+            modalNote.textContent = note;
+            modalNote.style.display = 'block'; 
+        } else {
+            modalNote.textContent = '';
+            modalNote.style.display = 'none'; 
+        }
+
+        // Update the published date
+        modalPublished.textContent = published;
+    });
+</script>
 
 </body>
 </html>
