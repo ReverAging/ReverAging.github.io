@@ -95,9 +95,9 @@
                 <div class="card h-100 shadow-sm paper-card" data-bs-toggle="modal" data-bs-target="#paperModal" 
                      data-paper-title="Schoenfeldt et al."
                      data-paper-abstract="The dedifferentiation of somatic cells into a pluripotent state by cellular reprogramming coincides with a reversal of age-associated molecular hallmarks. Although transcription factor induced cellular reprogramming has been shown to ameliorate these aging phenotypes in human cells and extend health and lifespan in mice, translational applications of this approach are still limited. More recently, chemical reprogramming via small molecule cocktails have demonstrated a similar ability to induce pluripotency in vitro, however, its potential impact on aging is unknown. Here, we demonstrated that partial chemical reprogramming is able to improve key drivers of aging including genomic instability and epigenetic alterations in aged human cells. Moreover, we identified an optimized combination of two reprogramming molecules sufficient to induce the amelioration of additional aging phenotypes including cellular senescence and oxidative stress. Importantly, in vivo application of this two-chemical combination significantly extended C. elegans lifespan. Together, these data demonstrate that improvement of key drivers of aging and lifespan extension is possible via chemical induced partial reprogramming, opening a path towards future translational applications."
-                     data-paper-doi="doi.org/10.1101/2022.08.29.505222 "
+                     data-paper-doi="https://doi.org/10.1101/2022.08.29.505222"
                      data-paper-note="(In press in EMBO)"
-                     data-paper-published="August 31, 2022">
+                     data-paper-published="August 29, 2022">
                     <img src="Images/schoen.jpg" class="card-img-top" alt="Schoenfeldt et al. paper">
                     <div class="card-body">
                         <h6 class="card-title">Schoenfeldt et al.</h6>
@@ -121,7 +121,7 @@
                 <div class="card h-100 shadow-sm paper-card" data-bs-toggle="modal" data-bs-target="#paperModal"
                      data-paper-title="Phelps et al."
                      data-paper-abstract="The nematode C. elegans has long served as a gold-standard model organism in aging research, particularly since the discovery of long-lived mutants in conserved aging pathways including daf-2 (IGF1) and age-1 (PI3K). Its short lifespan and small size make it highly suitable for high-throughput experiments. While numerous molecules have been tested for their effects on C. elegans lifespan, consensus is still lacking regarding the most effective and reproducible compounds. Confounding effects, especially those related to drug-bacteria interactions, remain a contentious issue in the literature. In this study, we evaluated 16 of the most frequently reported lifespan-extending molecules in C. elegans, examining their effects on lifespan with two different diets (live and UV-killed OP50). In addition, we assessed the compounds' impact on bacterial growth, their effects on various nematode strains, and the impact of the starting age of treatment. Our findings first confirmed robust lifespan extension by many, but not all, of the 16 tested compounds from the literature, and revealed that some of them could be combined to obtain additive effects. Additionally, we showed that some of these compounds also extend lifespan in the fly D. melanogaster, demonstrating a conserved effect across species. Finally, by expanding our screen to a broader pool of molecules, we identified novel lifespan-extending compounds in C. elegans."
-                     data-paper-doi="doi.org/10.1111/acel.14424"
+                     data-paper-doi="https://doi.org/10.1111/acel.14424"
                      data-paper-published="January 24, 2025">
                     <img src="Images/phelpsetal.png" class="card-img-top" alt="Phelps et al. paper">
                     <div class="card-body">
@@ -133,7 +133,7 @@
                 <div class="card h-100 shadow-sm paper-card" data-bs-toggle="modal" data-bs-target="#paperModal"
                      data-paper-title="Pico et al."
                      data-paper-abstract="In vivo reprogramming through the forced expression of Oct4, Sox2, Klf4, and c-Myc (OSKM) has demonstrated great potential for reversing age-associated phenotypes, as the combination of these transcription factors actively promote cell regeneration and rejuvenation in various tissues and organs. However, continuous in vivo OSKM expression raised safety concerns due to loss of cell identity, decrease in body weight, and premature death. Although cyclic short-term or targeted expression of the reprogramming factors can mitigate some of these detrimental effects in mice, systemic rejuvenation of wild type mice has remained elusive potentially due to these current technical limitations. To improve the fundamental understanding of in vivo reprogramming, we conducted a comparative analysis across multiple reprogrammable mouse strains, tissues, and expression methods, presenting a comprehensive atlas of formerly established strains. In addition, we developed novel reprogrammable mouse strains by avoiding OSKM expression in specific organs, in dividing cells, or implementing chimeric expression approaches within specific cells, thereby offering safer strategies to induce in vivo reprogramming and fully harness its potential. We hope that these new tools will become valuable resources for future research in this very exciting field of research with potential implications to human health."
-                     data-paper-doi="doi.org/10.1101/2024.03.08.584074"
+                     data-paper-doi="https://doi.org/10.1101/2024.03.08.584074"
                      data-paper-published="March 8, 2024">
                     <img src="Images/picoetal.jpg" class="card-img-top" alt="Pico et al. paper">
                     <div class="card-body">
@@ -374,6 +374,13 @@
 
         // Update the published date
         modalPublished.textContent = published;
+    });
+
+    // Close navbar on link click for small screens
+    $(document).ready(function() {
+        $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
     });
 </script>
 
