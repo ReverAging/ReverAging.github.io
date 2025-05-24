@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="Main/sticky-footer.css">
     <link rel="stylesheet" href="Main/totop.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+    </style>
     
 </head>
 <body>
@@ -150,60 +153,83 @@
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3">
-                    <img src="Images/Lucas.jpg" class="profile-pic profile-pic-low-saturation mb-3" alt="Lucas Schoenfeldt">
-                    <div class="card-body d-flex flex-column align-items-center text-center">
-                        <h5>Lucas Schoenfeldt, Ph.D</h5>
-                        <p class="text-muted">CEO, Co-founder</p>
-                        <p class="card-text text-start"> PhD in aging and reprogramming<br><br>
-                            • Expert in reprogramming, C. elegans, killifish and mouse experimentation.<br>
-                            • Published high-impact work on chemical reprogramming and longevity.<br>
-                            • Experience in biotech, drug discovery, and translational research.<br>
-                        </p>
-                        <a href="https://www.linkedin.com/in/lucas-schoenfeldt-53681913a" target="_blank" class="mt-auto">
-                            <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
-                        </a>
+                    <img src="Images/Lucas.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="Lucas Schoenfeldt" style="max-width: 180px; border-radius: 50%;">
+                    <div class="card-body d-flex flex-column align-items-center text-center" data-bs-toggle="collapse" data-bs-target="#lucasDetails">
+                        <h5 class="collapsible-trigger" role="button"  aria-expanded="false" aria-controls="lucasDetails">
+                            Lucas Schoenfeldt, Ph.D
+                        </h5>
+                        <p class="text-muted mb-2">CEO, Co-founder</p>
+                        <div class="collapse" id="lucasDetails">
+                            <div class="mt-2 text-start">
+                                <p class="card-text">
+                                    PhD in aging and reprogramming<br><br>
+                                    • Expert in reprogramming, C. elegans, killifish and mouse experimentation.<br>
+                                    • Published high-impact work on chemical reprogramming and longevity.<br>
+                                    • Experience in biotech, drug discovery, and translational research.<br>
+                                </p>
+                                <div class="text-center">
+                                    <a href="https://www.linkedin.com/in/lucas-schoenfeldt-53681913a" target="_blank" class="mt-2 d-inline-block">
+                                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3">
-                    <img src="Images/Theo.jpg" class="profile-pic profile-pic-low-saturation mb-3" alt="Théo Aspert">
-                    <div class="card-body d-flex flex-column align-items-center text-center">
-                        <h5>Théo Aspert, Ph.D</h5>
-                        <p class="text-muted">CSO, Co-founder</p>
-                        <p class="card-text text-start">
-                            PhD in aging, researcher at EPFL<br><br>
-                            • Expert in human cell biology, bioengineering and automation.<br>
-                            • 9 years in research and 2 years in biotech and aging startups.<br>
-                            • Award-winning scientist with multiple high-impact publications.<br>
-                        </p>
-                        <a href="https://www.linkedin.com/in/theoaspert" target="_blank" class="mt-auto">
-                            <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
-                        </a>
+                    <img src="Images/Theo.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="Théo Aspert" style="max-width: 180px; border-radius: 50%;">
+                    <div class="card-body d-flex flex-column align-items-center text-center" data-bs-toggle="collapse" data-bs-target="#theoDetails">
+                        <h5 class="collapsible-trigger" role="button"  aria-expanded="false" aria-controls="theoDetails">
+                            Théo Aspert, Ph.D
+                        </h5>
+                        <p class="text-muted mb-2">CSO, Co-founder</p>
+                        <div class="collapse" id="theoDetails">
+                            <div class="mt-2 text-start">
+                                <p class="card-text">
+                                    PhD in aging, researcher at EPFL<br><br>
+                                    • Expert in human cell biology, bioengineering and automation.<br>
+                                    • 9 years in research and 2 years in biotech and aging startups.<br>
+                                    • Award-winning scientist with multiple high-impact publications.<br>
+                                </p>
+                                <div class="text-center">
+                                    <a href="https://www.linkedin.com/in/theoaspert" target="_blank" class="mt-2 d-inline-block">
+                                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3">
-                    <img src="Images/Parras.jpg" class="profile-pic profile-pic-low-saturation mb-3" alt="Parras">
-                    <div class="card-body d-flex flex-column align-items-center text-center">
-                        <h5>Alberto Parras, Ph.D</h5>
-                        <p class="text-muted">Strategic partner, Co-founder</p>
-                        <p class="card-text text-start">
-                            Founder & CEO of VivoArchitect, aging preclinical CRO.<br><br>
-                            • Serial entrepreneur with businesses across Europe.
-                            • Extensive experience in in vivo reprogramming & drug discovery in AADs.<br>
-                            • Recipient of awards, reports, and patents.<br>
-                        </p>
-                        <div class="d-flex justify-content-center mt-auto">
-                            <a href="https://www.linkedin.com/in/alberto-parras-ph-d-a11940175/" target="_blank">
-                                <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo me-2">
-                            </a>
-                            <a href="https://www.vivoarchitect.ch/" target="_blank">
-                                <img src="Images/website.png" alt="Website" class="linkedin-logo">
-                            </a>
+                    <img src="Images/Parras.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="Alberto Parras" style="max-width: 180px; border-radius: 50%;">
+                    <div class="card-body d-flex flex-column align-items-center text-center" data-bs-toggle="collapse" data-bs-target="#parrasDetails">
+                        <h5 class="collapsible-trigger" role="button"  aria-expanded="false" aria-controls="parrasDetails">
+                            Alberto Parras, Ph.D
+                        </h5>
+                        <p class="text-muted mb-2">Strategic partner, Co-founder</p>
+                         <div class="collapse" id="parrasDetails">
+                            <div class="mt-2 text-start">
+                                <p class="card-text">
+                                    Founder & CEO of VivoArchitect, aging preclinical CRO.<br><br>
+                                    • Serial entrepreneur with businesses across Europe.<br>
+                                    • Extensive experience in in vivo reprogramming & drug discovery in AADs.<br>
+                                    • Recipient of awards, reports, and patents.<br>
+                                </p>
+                                <div class="d-flex justify-content-center mt-2">
+                                    <a href="https://www.linkedin.com/in/alberto-parras-ph-d-a11940175/" target="_blank" class="me-2">
+                                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                                    </a>
+                                    <a href="https://www.vivoarchitect.ch/" target="_blank">
+                                        <img src="Images/website.png" alt="Website" class="linkedin-logo">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -211,77 +237,105 @@
         </div>
     </section>
 
-    <section class="container my-5 advisors-section">
+    <section class="container my-5 advisors-section scroll-offset">
         <h2 class="text-center display-5 mb-4 section-title">Our Advisors</h2>
         <div class="row justify-content-center">
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3">
-                    <img src="Images/Snyder.jpg" class="profile-pic profile-pic-low-saturation mb-3" alt="Michael Snyder">
-                    <div class="card-body d-flex flex-column align-items-center text-center">
-                        <h5>Michael Snyder, PhD</h5>
-                        <p class="text-muted">Stanford University</p>
-                        <p class="card-text text-start">
-                            Chair of Genetics & Director of Personalized Medicine.<br>
-                            Leader in aging biomarkers, multi-omics, personalized health.<br>
-                            Major participant of ENCODE project, 800+ publications, co-founder of 18 companies.
-                        </p>
-                        <a href="https://www.linkedin.com/in/mpsnyder1/" target="_blank" class="mt-auto">
-                            <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
-                        </a>
+                    <img src="Images/Snyder.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="Michael Snyder" style="max-width: 180px; border-radius: 50%;">
+                    <div class="card-body d-flex flex-column align-items-center text-center" data-bs-toggle="collapse" data-bs-target="#snyderDetails">
+                        <h5 class="collapsible-trigger" role="button"  aria-expanded="false" aria-controls="snyderDetails">
+                            Michael Snyder, PhD
+                        </h5>
+                        <p class="text-muted mb-2">Stanford University</p>
+                        <div class="collapse" id="snyderDetails">
+                            <div class="mt-2 text-start">
+                                <p class="card-text">
+                                    Chair of Genetics & Director of Personalized Medicine.<br>
+                                    Leader in aging biomarkers, multi-omics, personalized health.<br>
+                                    Major participant of ENCODE project, 800+ publications, co-founder of 18 companies.
+                                </p>
+                                <div class="text-center">
+                                    <a href="https://www.linkedin.com/in/mpsnyder1/" target="_blank" class="mt-2 d-inline-block">
+                                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                                    </a>
+                                 </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3">
-                    <img src="Images/Antebi.jpg" class="profile-pic profile-pic-low-saturation mb-3" alt="Adam Antebi">
-                    <div class="card-body d-flex flex-column align-items-center text-center">
-                        <h5>Adam Antebi, PhD</h5>
-                        <p class="text-muted">Max Planck Institute</p>
-                        <p class="card-text text-start">
-                            Director of the Max Planck Institute for Biology of Ageing.<br>
-                            Pioneer in molecular genetics of aging, longevity across species.<br>
-                            Keynote speaker & advisor to global science initiatives.
-                        </p>
+                    <img src="Images/Antebi.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="Adam Antebi" style="max-width: 180px; border-radius: 50%;">
+                    <div class="card-body d-flex flex-column align-items-center text-center" data-bs-toggle="collapse" data-bs-target="#antebiDetails">
+                        <h5 class="collapsible-trigger" role="button"  aria-expanded="false" aria-controls="antebiDetails">
+                            Adam Antebi, PhD
+                        </h5>
+                        <p class="text-muted mb-2">Max Planck Institute</p>
+                        <div class="collapse" id="antebiDetails">
+                            <div class="mt-2 text-start">
+                                <p class="card-text">
+                                    Director of the Max Planck Institute for Biology of Ageing.<br>
+                                    Pioneer in molecular genetics of aging, longevity across species.<br>
+                                    Keynote speaker & advisor to global science initiatives.
+                                </p>
+                                </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3">
-                    <img src="Images/Vilchez.jpg" class="profile-pic profile-pic-low-saturation mb-3" alt="David Vilchez">
-                    <div class="card-body d-flex flex-column align-items-center text-center">
-                        <h5>David Vilchez, PhD</h5>
-                        <p class="text-muted">University of Cologne</p>
-                        <p class="card-text text-start">
-                            Professor at CECAD & Institute for Genetics.<br>
-                            Leader in aging and proteostasis research.<br>
-                            ERC & Marie Curie grantee, high-impact researcher on aging and neurodegeneration.
-                        </p>
-                        <a href="https://www.linkedin.com/in/david-vilchez-402a8b25/" target="_blank" class="mt-auto">
-                            <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
-                        </a>
+                    <img src="Images/Vilchez.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="David Vilchez" style="max-width: 180px; border-radius: 50%;">
+                    <div class="card-body d-flex flex-column align-items-center text-center" data-bs-toggle="collapse" data-bs-target="#vilchezDetails">
+                        <h5 class="collapsible-trigger" role="button"  aria-expanded="false" aria-controls="vilchezDetails">
+                            David Vilchez, PhD
+                        </h5>
+                        <p class="text-muted mb-2">University of Cologne</p>
+                        <div class="collapse" id="vilchezDetails">
+                             <div class="mt-2 text-start">
+                                <p class="card-text">
+                                    Professor at CECAD & Institute for Genetics.<br>
+                                    Leader in aging and proteostasis research.<br>
+                                    ERC & Marie Curie grantee, high-impact researcher on aging and neurodegeneration.
+                                </p>
+                                <div class="text-center">
+                                    <a href="https://www.linkedin.com/in/david-vilchez-402a8b25/" target="_blank" class="mt-2 d-inline-block">
+                                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3">
-                    <img src="Images/Soumya.jpg" class="profile-pic profile-pic-low-saturation mb-3" alt="Soumya Banerjee">
-                    <div class="card-body d-flex flex-column align-items-center text-center">
-                        <h5>Soumya Banerjee, PhD</h5>
-                        <p class="text-muted">Strategic Partner, CEO & Co-founder of Juvion Health Science</p>
-                        <p class="card-text text-start">
-                            PhD in aging and neurodegeneration. Juvion Health Science advances next-generation therapeutics to prevent age-related neuromuscular diseases.
-                        </p>
-                        <div class="d-flex justify-content-center mt-auto">
-                            <a href="https://www.linkedin.com/in/soumya-banerjee83/" target="_blank">
-                                <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo me-2">
-                            </a>
-                            <a href="https://juvionls.com/" target="_blank">
-                                <img src="Images/website.png" alt="Website" class="linkedin-logo">
-                            </a>
+                    <img src="Images/Soumya.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="Soumya Banerjee" style="max-width: 180px; border-radius: 50%;">
+                    <div class="card-body d-flex flex-column align-items-center text-center" data-bs-toggle="collapse" data-bs-target="#banerjeeDetails">
+                        <h5 class="collapsible-trigger" role="button"  aria-expanded="false" aria-controls="banerjeeDetails">
+                            Soumya Banerjee, PhD
+                        </h5>
+                        <p class="text-muted mb-2">Strategic Partner, CEO & Co-founder of Juvion Health Science</p>
+                        <div class="collapse" id="banerjeeDetails">
+                            <div class="mt-2 text-start">
+                                <p class="card-text">
+                                    PhD in aging and neurodegeneration. Juvion Health Science advances next-generation therapeutics to prevent age-related neuromuscular diseases.
+                                </p>
+                                <div class="d-flex justify-content-center mt-2">
+                                    <a href="https://www.linkedin.com/in/soumya-banerjee83/" target="_blank" class="me-2">
+                                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                                    </a>
+                                    <a href="https://juvionls.com/" target="_blank">
+                                        <img src="Images/website.png" alt="Website" class="linkedin-logo">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -305,8 +359,7 @@
         <p class="mb-0 footer-text">
             <span class="d-block mt-2">
                 Rever (2025) - All rights reserved - Work in progress. Preferred contact:
-                <a class="text-dark font-weight-bold" href="mailto:">
-                    lucas at reveraging.com
+                <a class="text-dark font-weight-bold" href="mailto:lucas@reveraging.com"> lucas at reveraging.com
                 </a>
             </span>
         </p>
@@ -334,7 +387,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="Main/jquery-3.js"></script>
 <script src="Main/totop.js"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
@@ -360,10 +412,9 @@
 
         modalTitle.textContent = title;
         modalAbstract.textContent = abstract;
-        modalDoi.textContent = doi; // Display the full URL or DOI
-        modalDoi.href = doi; // Set the href directly to the full URL
+        modalDoi.textContent = doi; 
+        modalDoi.href = doi; 
 
-        // Update the note and show/hide it based on existence
         if (note) {
             modalNote.textContent = note;
             modalNote.style.display = 'block'; 
@@ -371,17 +422,92 @@
             modalNote.textContent = '';
             modalNote.style.display = 'none'; 
         }
-
-        // Update the published date
         modalPublished.textContent = published;
     });
 
     // Close navbar on link click for small screens
     $(document).ready(function() {
         $('.navbar-nav>li>a').on('click', function(){
-            $('.navbar-collapse').collapse('hide');
+            // Check if the navbar is collapsible and currently collapsed
+            if ($('.navbar-toggler').is(':visible') && $('.navbar-collapse').hasClass('show')) {
+                 $('.navbar-collapse').collapse('hide');
+            }
         });
     });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const navbar = document.querySelector('.navbar.fixed-top');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href^="#"]:not([href="#"])');
+    const homeLink = document.querySelector('.navbar-nav .nav-link[href="/"]');
+
+    const sectionsInfo = Array.from(navLinks).map(link => {
+        const sectionId = link.getAttribute('href');
+        try {
+            const sectionElement = document.querySelector(sectionId);
+            if (sectionElement) {
+                return {
+                    link: link,
+                    element: sectionElement
+                };
+            }
+        } catch (e) {
+            console.warn(`Invalid selector for nav link: ${sectionId}`, e);
+        }
+        return null;
+    }).filter(info => info !== null);
+
+    function updateActiveNavLink() {
+        const scrollY = window.scrollY;
+        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+        let determinedActiveSectionId = null;
+
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.classList.remove('active');
+        });
+
+        const scrollBufferForBottom = 40; // Increased buffer for better detection at bottom
+        if (sectionsInfo.length > 0 && (window.innerHeight + scrollY) >= document.documentElement.scrollHeight - scrollBufferForBottom) {
+            const lastSectionInfo = sectionsInfo[sectionsInfo.length - 1];
+            if (lastSectionInfo && lastSectionInfo.link) {
+                lastSectionInfo.link.classList.add('active');
+                return; 
+            }
+        }
+
+        const triggerLineOffset = 10; 
+        for (let i = sectionsInfo.length - 1; i >= 0; i--) { // Iterate backwards
+            const info = sectionsInfo[i];
+            const sectionElement = info.element;
+            const sectionTop = sectionElement.offsetTop;
+
+            if (sectionTop <= scrollY + navbarHeight + triggerLineOffset) {
+                determinedActiveSectionId = sectionElement.getAttribute('id');
+                break; 
+            }
+        }
+
+        if (determinedActiveSectionId) {
+            const activeNavLink = document.querySelector(`.navbar-nav .nav-link[href="#${determinedActiveSectionId}"]`);
+            if (activeNavLink) {
+                activeNavLink.classList.add('active');
+            }
+        } else if (homeLink) {
+            let isAboveFirstSection = true; 
+            if (sectionsInfo.length > 0) {
+                isAboveFirstSection = scrollY < sectionsInfo[0].element.offsetTop - navbarHeight - triggerLineOffset;
+            }
+            if (isAboveFirstSection) {
+                homeLink.classList.add('active');
+            }
+        }
+    }
+
+    window.addEventListener('scroll', updateActiveNavLink);
+    window.addEventListener('resize', updateActiveNavLink);
+    updateActiveNavLink(); // Initial call
+});
 </script>
 
 </body>

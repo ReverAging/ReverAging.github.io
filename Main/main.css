@@ -1,3 +1,5 @@
+/* main.css */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -24,8 +26,8 @@ body {
     text-align: justify;
 }
 
-.team-section .card-body,
-.advisors-section .card-body {
+/* Ensure card-body is centered for content, but allow text inside to be left-aligned if specified */
+.card-body {
     text-align: center;
 }
 
@@ -43,12 +45,8 @@ body {
     display: block;
 }
 
-.card-body {
-    text-align: center;
-}
-
 .card-text {
-    text-align: left;
+    text-align: left; /* Keep the descriptive text left-aligned */
     font-size: 0.9rem;
 }
 
@@ -78,4 +76,54 @@ body {
 
 .profile-pic-low-saturation {
     filter: saturate(20%);
+}
+
+/* Changes for making the whole card body clickable and removing the arrow */
+.team-section .card,
+.advisors-section .card {
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+/* Remove default trigger styling, as the whole card will handle the click */
+.collapsible-trigger {
+    cursor: default; /* Reset cursor for the h5 element itself if it was changed */
+    transition: none; /* Remove transition as it's no longer the primary click target */
+    color: inherit; /* Ensure default text color */
+}
+
+.collapsible-trigger:hover {
+    color: inherit; /* Prevent color change on h5 hover */
+    text-decoration: none;
+}
+
+/* Remove the arrow icon */
+.collapsible-trigger::after {
+    content: none;
+}
+
+/* NEW ADDITION: Prevent cards from taking the full height of the expanded card */
+.team-section .row,
+.advisors-section .row {
+    align-items: flex-start; /* Aligns items to the start of the cross axis (top) */
+}
+
+/* Ensure individual cards within these sections are flexible enough to grow/shrink based on content */
+.team-section .card,
+.advisors-section .card {
+    display: flex; /* Make the card itself a flex container */
+    flex-direction: column; /* Stack its content vertically */
+    height: auto; /* Allow the card to determine its height based on content */
+}
+
+.team-section .card .card-body,
+.advisors-section .card .card-body {
+    flex-grow: 1; /* Allow the card body to grow and take available space */
+    display: flex; /* Make card-body a flex container */
+    flex-direction: column; /* Stack its content vertically */
+    justify-content: space-between; /* Distribute space between elements if desired, though here it just ensures flex behavior */
+}
+
+.team-section .card .card-body > .collapse,
+.advisors-section .card .card-body > .collapse {
+    width: 100%; /* Ensure the collapsed content takes full width */
 }
