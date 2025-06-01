@@ -1,110 +1,83 @@
 /* main.css */
 
+/* Font Harmonization */
+:root {
+    --primary-font: 'Merriweather', serif; /* Merriweather for headings and emphasized text */
+    --secondary-font: 'Arial', sans-serif; /* A clear sans-serif for body text. You can change 'Arial' to 'Segoe UI' if you prefer */
+    
+    /* Font Sizes */
+    --font-size-large: 2.25rem;   /* For main headings (e.g., h2, display-4) */
+    --font-size-medium: 1.125rem; /* For lead paragraphs, navigation links, card titles */
+    --font-size-small: 0.9rem;    /* For small text, muted text, details */
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-medium); /* Default body text size */
+    color: #333; /* A general text color */
 }
 
-.card-text, .card-title, .card-subtitle, .nav-link, .footer-text {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1, h2, h3, h4, h5, h6, .display-4, .section-title {
+    font-family: var(--primary-font);
+    font-weight: 900; /* Merriweather 900 is bold */
+    color: #212529; /* Darker color for headings */
 }
 
-.card:hover {
-    transform: translateY(-3px);
-    transition: transform 0.2s ease-in-out;
+/* Specific size for the "WORK IN PROGRESS..." heading */
+.display-4 {
+    font-size: var(--font-size-large);
+}
+
+/* Specific size for section titles like "Why Target Aging?" */
+.section-title {
+    font-size: var(--font-size-large);
+}
+
+/* Lead paragraphs also use primary font for emphasis */
+.lead {
+    font-family: var(--primary-font);
+    font-size: var(--font-size-medium);
 }
 
 .navbar-nav .nav-link {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    font-size: var(--font-size-medium);
+    font-family: var(--secondary-font); /* Navigation links can be secondary font */
+    padding-left: 1rem; /* Kept from your original code */
+    padding-right: 1rem; /* Kept from your original code */
 }
 
-.scroll-offset {
-    scroll-margin-top: 80px;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-/* Ensure card-body is centered for content, but allow text inside to be left-aligned if specified */
-.card-body {
-    text-align: center;
-}
-
-.card-img-top {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.profile-pic {
-    border-radius: 50%;
-    max-width: 120px;
-    height: 120px;
-    margin: auto;
-    display: block;
+.card-title {
+    font-family: var(--primary-font); /* Card titles for papers/people */
+    font-size: var(--font-size-medium);
 }
 
 .card-text {
-    text-align: left; /* Keep the descriptive text left-aligned */
-    font-size: 0.9rem;
+    font-size: var(--font-size-small); /* Details inside collapsed sections */
+    font-family: var(--secondary-font);
+    text-align: left; /* Kept from your original code */
 }
 
-#why-it-matters p,
-#technology p {
-    text-align: justify;
+small, .text-muted {
+    font-size: var(--font-size-small) !important; /* Ensure small text is consistent */
+    font-family: var(--secondary-font);
 }
 
-.linkedin-logo {
-    width: 24px;
-    height: 24px;
-    margin-top: 10px;
+.footer-text {
+    font-size: var(--font-size-small);
+    font-family: var(--secondary-font);
 }
 
-@media (max-width: 768px) {
-    .profile-pic {
-        max-width: 100px;
-        height: 100px;
-    }
+/* --- Card Styling --- */
+
+/* Make cards clickable and add subtle hover effect */
+.card.h-100.shadow-sm.p-3, .card.h-100.shadow-sm.paper-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.section-title {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.profile-pic-low-saturation {
-    filter: saturate(20%);
-}
-
-/* Changes for making the whole card body clickable and removing the arrow */
-.team-section .card,
-.advisors-section .card {
-    cursor: pointer; /* Indicate it's clickable */
-}
-
-/* Remove default trigger styling, as the whole card will handle the click */
-.collapsible-trigger {
-    cursor: default; /* Reset cursor for the h5 element itself if it was changed */
-    transition: none; /* Remove transition as it's no longer the primary click target */
-    color: inherit; /* Ensure default text color */
-}
-
-.collapsible-trigger:hover {
-    color: inherit; /* Prevent color change on h5 hover */
-    text-decoration: none;
-}
-
-/* Remove the arrow icon */
-.collapsible-trigger::after {
-    content: none;
-}
-
-/* NEW ADDITION: Prevent cards from taking the full height of the expanded card */
-.team-section .row,
-.advisors-section .row {
-    align-items: flex-start; /* Aligns items to the start of the cross axis (top) */
+.card.h-100.shadow-sm.p-3:hover, .card.h-100.shadow-sm.paper-card:hover, .card:hover { /* Consolidated hover */
+    transform: translateY(-5px); /* Increased from -3px for more noticeable effect, matching previous suggestion */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 /* Ensure individual cards within these sections are flexible enough to grow/shrink based on content */
@@ -126,4 +99,87 @@ body {
 .team-section .card .card-body > .collapse,
 .advisors-section .card .card-body > .collapse {
     width: 100%; /* Ensure the collapsed content takes full width */
+}
+
+
+/* Remove default trigger styling, as the whole card will handle the click */
+.collapsible-trigger {
+    cursor: default; /* Reset cursor for the h5 element itself if it was changed */
+    transition: none; /* Remove transition as it's no longer the primary click target */
+    color: inherit; /* Ensure default text color */
+}
+
+.collapsible-trigger:hover {
+    color: inherit; /* Prevent color change on h5 hover */
+    text-decoration: none;
+}
+
+/* Remove the arrow icon */
+.collapsible-trigger::after {
+    content: none;
+}
+
+/* --- Image and Layout Styling --- */
+
+/* Logo Proportions in Navbar */
+.logo-img {
+    height: 40px; /* Or whatever height you prefer for the logo */
+    width: auto; /* This maintains the aspect ratio */
+    max-width: 100%; /* Ensures it doesn't overflow its container */
+}
+
+/* Ensure LinkedIn and Website logos keep proportions */
+.linkedin-logo, .website-logo {
+    height: 24px; /* Adjust size as needed */
+    width: auto;
+    vertical-align: middle;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    max-width: 120px;
+    height: 120px;
+    margin: auto;
+    display: block;
+    filter: saturate(20%); /* Applied directly here */
+}
+
+@media (max-width: 768px) {
+    .profile-pic {
+        max-width: 100px;
+        height: 100px;
+    }
+}
+
+/* Text alignment for specific sections */
+#why-it-matters p,
+#technology p {
+    text-align: justify;
+}
+
+/* General text alignment (if not explicitly overridden) */
+.text-justify {
+    text-align: justify;
+}
+
+/* Card body alignment */
+.card-body {
+    text-align: center; /* Centered for the overall content */
+}
+
+/* Scroll offset for smooth scrolling to sections */
+.scroll-offset {
+    scroll-margin-top: 80px;
+}
+
+/* NEW ADDITION: Prevent cards from taking the full height of the expanded card */
+.team-section .row,
+.advisors-section .row {
+    align-items: flex-start; /* Aligns items to the start of the cross axis (top) */
 }
