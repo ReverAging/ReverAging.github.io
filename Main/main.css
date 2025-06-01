@@ -2,8 +2,8 @@
 
 /* Font Harmonization */
 :root {
-    --primary-font: 'Merriweather', serif; /* Merriweather for headings and emphasized text */
-    --secondary-font: 'Arial', sans-serif; /* A clear sans-serif for body text. You can change 'Arial' to 'Segoe UI' if you prefer */
+    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* All fonts set to Segoe UI */
+    --secondary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* All fonts set to Segoe UI */
     
     /* Font Sizes */
     --font-size-large: 2.25rem;   /* For main headings (e.g., h2, display-4) */
@@ -19,7 +19,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, .display-4, .section-title {
     font-family: var(--primary-font);
-    font-weight: 900; /* Merriweather 900 is bold */
+    font-weight: bold; /* Segoe UI typically doesn't have a 900 weight, so 'bold' is safer */
     color: #212529; /* Darker color for headings */
 }
 
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, .display-4, .section-title {
 .card-text {
     font-size: var(--font-size-small); /* Details inside collapsed sections */
     font-family: var(--secondary-font);
-    text-align: left; /* Kept from your original code */
+    text-align: left; /* Keep the descriptive text left-aligned */
 }
 
 small, .text-muted {
@@ -76,7 +76,7 @@ small, .text-muted {
 }
 
 .card.h-100.shadow-sm.p-3:hover, .card.h-100.shadow-sm.paper-card:hover, .card:hover { /* Consolidated hover */
-    transform: translateY(-5px); /* Increased from -3px for more noticeable effect, matching previous suggestion */
+    transform: translateY(-5px); /* Increased from -3px for more noticeable effect */
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -135,12 +135,7 @@ small, .text-muted {
     vertical-align: middle;
 }
 
-.card-img-top {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
+/* Profile pictures */
 .profile-pic {
     border-radius: 50%;
     max-width: 120px;
@@ -148,6 +143,13 @@ small, .text-muted {
     margin: auto;
     display: block;
     filter: saturate(20%); /* Applied directly here */
+    /* Removed inline style from HTML for max-width to centralize in CSS */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -178,7 +180,7 @@ small, .text-muted {
     scroll-margin-top: 80px;
 }
 
-/* NEW ADDITION: Prevent cards from taking the full height of the expanded card */
+/* Align cards to the top in team/advisory rows */
 .team-section .row,
 .advisors-section .row {
     align-items: flex-start; /* Aligns items to the start of the cross axis (top) */
