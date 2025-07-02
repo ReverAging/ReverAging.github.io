@@ -491,7 +491,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        const triggerLineOffset = 10; 
+        const triggerLineOffset = 50; // Changed to 50 for earlier activation
         for (let i = sectionsInfo.length - 1; i >= 0; i--) { // Iterate backwards
             const info = sectionsInfo[i];
             const sectionElement = info.element;
@@ -517,6 +517,25 @@ document.addEventListener('DOMContentLoaded', function () {
                 homeLink.classList.add('active');
             }
         }
+    }
+
+    // Add click listeners to immediately set active class
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            // Remove active from all others
+            document.querySelectorAll('.navbar-nav .nav-link').forEach(nav => nav.classList.remove('active'));
+            // Add active to the clicked link
+            this.classList.add('active');
+            // The scroll event listener will then re-evaluate and maintain correctness
+            // as the page scrolls to the target section.
+        });
+    });
+
+    if (homeLink) {
+        homeLink.addEventListener('click', function(event) {
+            document.querySelectorAll('.navbar-nav .nav-link').forEach(nav => nav.classList.remove('active'));
+            this.classList.add('active');
+        });
     }
 
     window.addEventListener('scroll', updateActiveNavLink);
