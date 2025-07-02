@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="logo.png" type="image/png">
     <link rel="icon" href="logo.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="Main/main.css">
@@ -16,9 +16,6 @@
     <link rel="stylesheet" href="Main/sticky-footer.css">
     <link rel="stylesheet" href="Main/totop.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <style>
-    </style>
     
 </head>
 <body>
@@ -65,6 +62,11 @@
         <button onclick="topFunction()" id="buttonscroll" title="Go to top"></button>
     </div>
 
+    <!-- Added logo_black.png here -->
+    <div class="container text-center mb-5">
+        <img src="logo_black.png" alt="Rever Black Logo" class="img-fluid" style="max-width: 200px;">
+    </div>
+
     <section id="why-it-matters" class="container scroll-offset">
         <h2 class="text-center mb-4 section-title">Why Target Aging?</h2>
         <p class="lead">
@@ -74,18 +76,18 @@
             <img src="Images/driver.png" alt="Aging driver illustration" class="img-fluid" style="max-width: 50%;">
         </div>
         <p class="lead">
-As aging and age-associated diseases become an increasingly significant societal
-burden, there is an urgent need to develop effective strategies to mitigate their impact.
-The rising prevalence of chronic conditions that are predominantly caused by aging
-poses challenges not only to healthcare systems but also to the quality of life of the
-aging population.
+        As aging and age-associated diseases become an increasingly significant societal
+        burden, there is an urgent need to develop effective strategies to mitigate their impact.
+        The rising prevalence of chronic conditions that are predominantly caused by aging
+        poses challenges not only to healthcare systems but also to the quality of life of the
+        aging population.
         </p>
         <div class="text-center my-4">
             <img src="Images/30.jpg" alt="Illustration related to aging burden" class="img-fluid" style="max-width: 50%;">
         </div>
         <p class="lead">
-Without addressing the root cause, biological aging, treating one disease only delays the onset of another. By extending healthspan, we can reduce disease burden, improve quality of life, and boost economic value across society.
-        </p>
+        Without addressing the root cause, biological aging, treating one disease only delays the onset of another. By extending healthspan, we can reduce disease burden, improve quality of life, and boost economic value across society.
+                </p>
         <div class="text-center my-4">
             <img src="Images/aging.png" alt="Illustration related to healthspan extension" class="img-fluid" style="max-width: 50%;">
         </div>
@@ -176,25 +178,22 @@ The results suggest that partial chemical reprogramming could modulate the under
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3" data-bs-toggle="collapse" data-bs-target="#lucasDetails" aria-expanded="false" aria-controls="lucasDetails">
-                    <img src="Images/Lucas.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="Lucas Schoenfeldt" style="max-width: 180px; border-radius: 50%;">
+                    <img src="Images/Lucas.jpg" class="profile-pic mb-3 mx-auto" alt="Lucas Schoenfeldt">
                     <div class="card-body d-flex flex-column align-items-center text-center">
                         <h5 class="collapsible-trigger" role="button">
                             Lucas Schoenfeldt, Ph.D
                         </h5>
                         <p class="text-muted mb-2">CEO, Co-founder</p>
+                        <div class="text-center mb-2"> <!-- LinkedIn logo outside collapse -->
+                            <a href="https://www.linkedin.com/in/lucas-schoenfeldt-53681913a" target="_blank" class="d-inline-block">
+                                <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                            </a>
+                        </div>
                         <div class="collapse" id="lucasDetails">
                             <div class="mt-2 text-start">
                                 <p class="card-text">
-                                    PhD in aging and reprogramming<br><br>
-                                    • Expert in reprogramming, C. elegans, killifish and mouse experimentation.<br>
-                                    • Published high-impact work on chemical reprogramming and longevity.<br>
-                                    • Experience in biotech, drug discovery, and translational research.<br>
+                                    Lucas holds a PhD in aging and reprogramming. He is an expert in reprogramming, C. elegans, killifish, and mouse experimentation. He has published high-impact work on chemical reprogramming and longevity, and has experience in biotech, drug discovery, and translational research.
                                 </p>
-                                <div class="text-center">
-                                    <a href="https://www.linkedin.com/in/lucas-schoenfeldt-53681913a" target="_blank" class="mt-2 d-inline-block">
-                                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -203,25 +202,22 @@ The results suggest that partial chemical reprogramming could modulate the under
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3" data-bs-toggle="collapse" data-bs-target="#theoDetails" aria-expanded="false" aria-controls="theoDetails">
-                    <img src="Images/Theo.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="Théo Aspert" style="max-width: 180px; border-radius: 50%;">
+                    <img src="Images/Theo.jpg" class="profile-pic mb-3 mx-auto" alt="Théo Aspert">
                     <div class="card-body d-flex flex-column align-items-center text-center">
                         <h5 class="collapsible-trigger" role="button">
                             Théo Aspert, Ph.D
                         </h5>
                         <p class="text-muted mb-2">CSO, Co-founder</p>
+                        <div class="text-center mb-2"> <!-- LinkedIn logo outside collapse -->
+                            <a href="https://www.linkedin.com/in/theoaspert" target="_blank" class="d-inline-block">
+                                <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                            </a>
+                        </div>
                         <div class="collapse" id="theoDetails">
                             <div class="mt-2 text-start">
                                 <p class="card-text">
-                                    PhD in aging, researcher at EPFL<br><br>
-                                    • Expert in human cell biology, bioengineering and automation.<br>
-                                    • 9 years in research and 2 years in biotech and aging startups.<br>
-                                    • Award-winning scientist with multiple high-impact publications.<br>
+                                    Théo holds a PhD in aging and is a researcher at EPFL. He is an expert in human cell biology, bioengineering, and automation. He has 9 years of research experience and 2 years in biotech and aging startups, and is an award-winning scientist with multiple high-impact publications.
                                 </p>
-                                <div class="text-center">
-                                    <a href="https://www.linkedin.com/in/theoaspert" target="_blank" class="mt-2 d-inline-block">
-                                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -230,28 +226,25 @@ The results suggest that partial chemical reprogramming could modulate the under
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3" data-bs-toggle="collapse" data-bs-target="#parrasDetails" aria-expanded="false" aria-controls="parrasDetails">
-                    <img src="Images/Parras.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="Alberto Parras" style="max-width: 180px; border-radius: 50%;">
+                    <img src="Images/Parras.jpg" class="profile-pic mb-3 mx-auto" alt="Alberto Parras">
                     <div class="card-body d-flex flex-column align-items-center text-center">
                         <h5 class="collapsible-trigger" role="button">
                             Alberto Parras, Ph.D
                         </h5>
                         <p class="text-muted mb-2">Strategic partner, Co-founder</p>
-                           <div class="collapse" id="parrasDetails">
+                        <div class="justify-content-center mt-2"> <!-- LinkedIn and Website logos outside collapse -->
+                            <a href="https://www.linkedin.com/in/alberto-parras-ph-d-a11940175/" target="_blank" class="me-2">
+                                <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                            </a>
+                            <a href="https://www.vivoarchitect.ch/" target="_blank">
+                                <img src="Images/website.png" alt="Website" class="linkedin-logo">
+                            </a>
+                        </div>
+                        <div class="collapse" id="parrasDetails">
                             <div class="mt-2 text-start">
                                 <p class="card-text">
-                                    Founder & CEO of VivoArchitect, an aging preclinical CRO.<br><br>
-                                    • Serial entrepreneur with businesses across Europe.<br>
-                                    • Extensive experience in in vivo reprogramming & drug discovery in AADs.<br>
-                                    • Recipient of awards, reports, and patents.<br>
+                                    Alberto is the Founder & CEO of VivoArchitect, an aging preclinical CRO. He is a serial entrepreneur with businesses across Europe, possesses extensive experience in in vivo reprogramming and drug discovery in AADs, and is a recipient of numerous awards, reports, and patents.
                                 </p>
-                                <div class="d-flex justify-content-center mt-2">
-                                    <a href="https://www.linkedin.com/in/alberto-parras-ph-d-a11940175/" target="_blank" class="me-2">
-                                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
-                                    </a>
-                                    <a href="https://www.vivoarchitect.ch/" target="_blank">
-                                        <img src="Images/website.png" alt="Website" class="linkedin-logo">
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -266,24 +259,22 @@ The results suggest that partial chemical reprogramming could modulate the under
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3" data-bs-toggle="collapse" data-bs-target="#snyderDetails" aria-expanded="false" aria-controls="snyderDetails">
-                    <img src="Images/Snyder.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="Michael Snyder" style="max-width: 180px; border-radius: 50%;">
+                    <img src="Images/Snyder.jpg" class="profile-pic mb-3 mx-auto" alt="Michael Snyder">
                     <div class="card-body d-flex flex-column align-items-center text-center">
                         <h5 class="collapsible-trigger" role="button">
                             Michael Snyder, PhD
                         </h5>
                         <p class="text-muted mb-2">Stanford University</p>
+                        <div class="text-center mb-2"> <!-- LinkedIn logo outside collapse -->
+                            <a href="https://www.linkedin.com/in/mpsnyder1/" target="_blank" class="d-inline-block">
+                                <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                            </a>
+                        </div>
                         <div class="collapse" id="snyderDetails">
                             <div class="mt-2 text-start">
                                 <p class="card-text">
-                                    Chair of Genetics & Director of Personalized Medicine.<br>
-                                    Leader in aging biomarkers, multi-omics, personalized health.<br>
-                                    Major participant of ENCODE project, 800+ publications, co-founder of 18 companies.
+                                    Michael is the Chair of Genetics & Director of Personalized Medicine. He is a leader in aging biomarkers, multi-omics, and personalized health. He is a major participant of the ENCODE project, has over 800 publications, and is a co-founder of 18 companies.
                                 </p>
-                                <div class="text-center">
-                                    <a href="https://www.linkedin.com/in/mpsnyder1/" target="_blank" class="mt-2 d-inline-block">
-                                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
-                                    </a>
-                                   </div>
                             </div>
                         </div>
                     </div>
@@ -292,20 +283,23 @@ The results suggest that partial chemical reprogramming could modulate the under
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3" data-bs-toggle="collapse" data-bs-target="#antebiDetails" aria-expanded="false" aria-controls="antebiDetails">
-                    <img src="Images/Antebi.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="Adam Antebi" style="max-width: 180px; border-radius: 50%;">
+                    <img src="Images/Antebi.jpg" class="profile-pic mb-3 mx-auto" alt="Adam Antebi">
                     <div class="card-body d-flex flex-column align-items-center text-center">
                         <h5 class="collapsible-trigger" role="button">
                             Adam Antebi, PhD
                         </h5>
                         <p class="text-muted mb-2">Max Planck Institute</p>
+                        <div class="justify-content-center mt-2"> <!-- Website logo outside collapse -->
+                            <a href="https://www.mpg.de/365410/biology-of-ageing-antebi" target="_blank">
+                                <img src="Images/website.png" alt="Website" class="website-logo">
+                            </a>
+                        </div>
                         <div class="collapse" id="antebiDetails">
                             <div class="mt-2 text-start">
                                 <p class="card-text">
-                                    Director of the Max Planck Institute for Biology of Ageing.<br>
-                                    Pioneer in molecular genetics of aging, longevity across species.<br>
-                                    Keynote speaker & advisor to global science initiatives.
+                                    Adam is the Director of the Max Planck Institute for Biology of Ageing. He is a pioneer in the molecular genetics of aging and longevity across species, and a keynote speaker and advisor to global science initiatives.
                                 </p>
-                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -313,24 +307,22 @@ The results suggest that partial chemical reprogramming could modulate the under
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3" data-bs-toggle="collapse" data-bs-target="#vilchezDetails" aria-expanded="false" aria-controls="vilchezDetails">
-                    <img src="Images/Vilchez.jpg" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="David Vilchez" style="max-width: 180px; border-radius: 50%;">
+                    <img src="Images/Vilchez.jpg" class="profile-pic mb-3 mx-auto" alt="David Vilchez">
                     <div class="card-body d-flex flex-column align-items-center text-center">
                         <h5 class="collapsible-trigger" role="button">
                             David Vilchez, PhD
                         </h5>
                         <p class="text-muted mb-2">University of Cologne</p>
+                        <div class="text-center mb-2"> <!-- LinkedIn logo outside collapse -->
+                            <a href="https://www.linkedin.com/in/david-vilchez-402a8b25/" target="_blank" class="d-inline-block">
+                                <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                            </a>
+                        </div>
                         <div class="collapse" id="vilchezDetails">
                             <div class="mt-2 text-start">
                                 <p class="card-text">
-                                    Professor at CECAD & Institute for Genetics.<br>
-                                    Leader in aging and proteostasis research.<br>
-                                    ERC & Marie Curie grantee, high-impact researcher on aging and neurodegeneration.
+                                    David is a Professor at CECAD & Institute for Genetics. He is a leader in aging and proteostasis research, an ERC & Marie Curie grantee, and a high-impact researcher on aging and neurodegeneration.
                                 </p>
-                                <div class="text-center">
-                                    <a href="https://www.linkedin.com/in/david-vilchez-402a8b25/" target="_blank" class="mt-2 d-inline-block">
-                                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -339,25 +331,25 @@ The results suggest that partial chemical reprogramming could modulate the under
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 shadow-sm p-3" data-bs-toggle="collapse" data-bs-target="#banerjeeDetails" aria-expanded="false" aria-controls="banerjeeDetails">
-                    <img src="Images/Soumya.png" class="profile-pic profile-pic-low-saturation mb-3 mx-auto" alt="Soumya Banerjee" style="max-width: 180px; border-radius: 50%;">
+                    <img src="Images/Soumya.png" class="profile-pic mb-3 mx-auto" alt="Soumya Banerjee">
                     <div class="card-body d-flex flex-column align-items-center text-center">
                         <h5 class="collapsible-trigger" role="button">
                             Soumya Banerjee, PhD
                         </h5>
                         <p class="text-muted mb-2">Strategic Partner, CEO & Co-founder of Juvion Health Science</p>
+                        <div class="d-flex justify-content-center mt-2 mb-2"> <!-- LinkedIn and Website logos outside collapse -->
+                            <a href="https://www.linkedin.com/in/soumya-banerjee83/" target="_blank" class="me-2">
+                                <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                            </a>
+                            <a href="https://juvionls.com/" target="_blank">
+                                <img src="Images/website.png" alt="Website" class="linkedin-logo">
+                            </a>
+                        </div>
                         <div class="collapse" id="banerjeeDetails">
                             <div class="mt-2 text-start">
                                 <p class="card-text">
-                                    PhD in aging and neurodegeneration. Juvion Health Science advances next-generation therapeutics to prevent age-related neuromuscular diseases.
+                                    Soumya holds a PhD in aging and neurodegeneration. Juvion Health Science advances next-generation therapeutics to prevent age-related neuromuscular diseases.
                                 </p>
-                                <div class="d-flex justify-content-center mt-2">
-                                    <a href="https://www.linkedin.com/in/soumya-banerjee83/" target="_blank" class="me-2">
-                                        <img src="Images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
-                                    </a>
-                                    <a href="https://juvionls.com/" target="_blank">
-                                        <img src="Images/website.png" alt="Website" class="linkedin-logo">
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>

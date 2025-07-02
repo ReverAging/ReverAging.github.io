@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, .display-4, .section-title {
 .card-text {
     font-size: var(--font-size-small); /* Details inside collapsed sections */
     font-family: var(--secondary-font);
-    text-align: left; /* Keep the descriptive text left-aligned */
+    text-align: justify; /* Changed to justify */
 }
 
 small, .text-muted {
@@ -75,7 +75,7 @@ small, .text-muted {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.card.h-100.shadow-sm.p-3:hover, .card.h-100.shadow-sm.paper-card:hover, .card:hover { /* Consolidated hover */
+.card.h-100.shadow-sm.p-3:hover, .card.h-100.shadow-sm.paper-card:hover { /* Consolidated hover */
     transform: translateY(-5px); /* Increased from -3px for more noticeable effect */
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
@@ -138,12 +138,18 @@ small, .text-muted {
 /* Profile pictures */
 .profile-pic {
     border-radius: 50%;
-    max-width: 120px;
-    height: 120px;
+    width: 120px; /* Fixed width */
+    height: 120px; /* Fixed height */
+    object-fit: cover; /* Ensures image covers the area, cropping if necessary, maintaining aspect ratio */
+    object-position: center; /* Centers the image within the frame */
     margin: auto;
     display: block;
     filter: saturate(20%); /* Applied directly here */
-    /* Removed inline style from HTML for max-width to centralize in CSS */
+}
+
+/* Remove saturation filter on hover for profile pictures within cards */
+.card:hover .profile-pic {
+    filter: saturate(100%);
 }
 
 .card-img-top {
