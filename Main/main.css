@@ -167,8 +167,13 @@ small, .text-muted {
 
 /* Text alignment for specific sections */
 #why-it-matters p,
-#technology p {
+#technology p,
+.conference-list { /* Added for the new section */
     text-align: justify;
+}
+.conference-list .list-group-item {
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-medium);
 }
 
 /* General text alignment (if not explicitly overridden) */
